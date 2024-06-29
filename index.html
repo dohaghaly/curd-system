@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>DOHA GHALY</title>
+<head>
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">   
+</head>
+<body>
+
+    <div class="w-75 mx-auto py-4">
+        <h3 class="fw-bolder py-3">Project Management System</h3>
+        <label class="py-1" for="ProductNameInput">productName:</label>
+        <input class="form-control" type="text" id="ProductNameInput" >
+
+        <label class="py-1" for="productPriceInput">productprice:</label>
+        <input class="form-control" type="text" id="productPriceInput" >
+
+        <label class="py-1" for="product CategoryInput">productCategory:</label>
+        <input class="form-control" type="text" id="productCategoryInput" >
+
+        <label class="py-1" for="productDescInput">productDescrption:</label>
+        <textarea class="form-control" type="text" id="productDescInput" ></textarea>
+        <button onclick=Addproduct();  class="btn  my-2 btn-outline-danger ">Add product</button>
+    </div> 
+    <input onkeyup="searchproduct(this.value)" placeholder="search" id="searchinput" class="form-control w-50 m-auto" type="text">
+    <div class="w-75 mx-auto py-4">
+        <table class="table m-4   text-center">
+            <th>index</th>
+            <th>name</th>
+            <th>price</th>
+            <th>categoy</th>
+            <th>description</th>
+            <th> update</th>
+            <th>delete</th>
+            <tbody id="TableBody">
+                
+            </tbody>
+        </table>
+    </div>
+
+
+<script src="js/main.js"></script>    
+</body>
+</html>
